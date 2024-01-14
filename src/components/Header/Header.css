@@ -1,0 +1,147 @@
+.header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f3f3f3;
+    font-family: 'Noto Sans TC', sans-serif;
+    position: relative;
+}
+
+.header-inner {
+    display: flex;
+    align-items: center;
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.profile-picture {
+    flex: none;
+    width: 425px;
+    height: 425px;
+    border-radius: 50%;
+    margin-right: 70px;
+    overflow: hidden;
+    border: 7px solid #ffffff;
+}
+
+.profile-picture img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.header-content {
+    text-align: left;
+    width: 65%;
+    padding-left: 2%;
+}
+
+.hello-text {
+    font-size: 3.5vw;
+    margin-bottom: 0.5vw;
+    color: #333;
+}
+
+.header-content h2 {
+    font-size: 2vw;
+    color: #333;
+}
+
+.header-content p {
+    font-size: 1vw;
+    margin: 1vw 0;
+    color: #666;
+    line-height: 1.5;
+}
+
+.header-buttons {
+    display: flex;
+    justify-content: flex-start;
+    margin-top: 1.5vw;
+}
+
+.round-button {
+    font-size: 1.25vw;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;    color: white;
+    width: 120px;
+    height: 120px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-right: 11px;
+}
+
+/* Hover effect for round buttons */
+#c1:hover{
+    background-color: #808080; /* Grey background */
+    color: black; 
+}
+
+#c2:hover{
+    background-color: #808080; /* Grey background */
+    color: black; 
+}
+#c3:hover{
+    background-color: #808080; /* Grey background */
+    color: black; 
+}
+.round-button:nth-child(1) {
+    background-color: #FFD717;
+}
+
+.round-button:nth-child(2) {
+    background-color: #CD1818;
+}
+
+.round-button:nth-child(3) {
+    background-color: #0E8388;
+}
+
+.header-nav {
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 20px;
+    font-size: 18px;
+}
+
+.header-nav a {
+    color: #333;
+    text-decoration: none;
+    padding: 0 10px;
+}
+
+.header-nav a:hover {
+    text-decoration: underline;
+}
+
+.top-left-info {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    display: flex;
+    align-items: center;
+}
+
+.dot {
+    width: 20px;
+    height: 20px;
+    background-color: #f1c40f;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.name-title {
+    font-family: 'Noto Sans TC', sans-serif;
+    font-size: 18px;
+    color: black;
+    font-weight: 700;
+}
+
