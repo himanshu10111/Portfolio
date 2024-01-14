@@ -7,6 +7,7 @@ function App() {
     <div className="App">
       <Header />
       {/* More components will go here */}
+      
     </div>
   );
 }

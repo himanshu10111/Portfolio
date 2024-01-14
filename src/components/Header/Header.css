@@ -2,7 +2,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
+    height: 90vh;
     background-color: #f3f3f3;
     font-family: 'Noto Sans TC', sans-serif;
     position: relative;
@@ -145,3 +145,68 @@
     font-weight: 700;
 }
 
+footer {
+    width: 100%;
+    background-color: #f3f3f3;
+    padding: 20px 0;
+    box-sizing: border-box;
+    
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+    border-top: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+    padding: 20px 0;
+}
+
+.footer-section h3 {
+    margin-bottom: 10px;
+}
+
+.footer-section p {
+    margin: 0;
+    color: #666;
+}
+
+.footer-bottom {
+    text-align: center;
+    padding-top: 10px;
+}
+
+.footer-bottom p {
+    color: #666;
+    margin
+: 0;
+}
+
+@media (max-width: 768px) {
+    .footer-content {
+    flex-direction: column;
+    text-align: center;
+    }
+
+    .footer-section {
+        margin-bottom: 20px;
+    }
+    
+    .footer-bottom {
+        padding-top: 20px;
+    }
+}
+
+.main-content {
+    /* If you have a main content div, add bottom padding to push the footer down */
+    padding-bottom: 100px;
+}
+
+.footer-section a img {
+    width: 24px; /* or the size you prefer */
+    height: auto;
+    margin: 0 10px; /* Adjust the spacing around the icons as needed */
+  }
+
+  
