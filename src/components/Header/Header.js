@@ -1,6 +1,7 @@
 import React from 'react';
 import './Header.css';
 import profileImage from './profile-image.jpg';
+import { Link } from 'react-router-dom'; // Import Link
 
 function Header() {
     return (
@@ -22,16 +23,17 @@ function Header() {
                         <p>Innovative Developer with expertise in Corda R3 DLT, Spring Boot, and MySQL. Proficient in Version Control and Azure, I excel in creating user-focused applications. My passion for blockchain and cloud technologies drives me to deliver robust, cutting-edge solutions in dynamic team settings.</p>
 
                         <div className="header-buttons">
-                            <button className="round-button" id='c1'>Resume</button>
-                            <button className="round-button" id='c2'>Projects</button>
-                            <button className="round-button" id='c3'>Contact</button>
+                            {/* Use Link instead of button for navigation */}
+                            <Link to="/resume" className="round-button" id='c1'>Resume</Link>
+                            <Link to="/projects" className="round-button" id='c2'>Projects</Link>
+                            <Link to="/contact" className="round-button" id='c3'>Contact</Link>
                         </div>
                     </div>
 
                     <nav className="header-nav">
-                        <a href="#resume">Resume</a> |
-                        <a href="#projects">Projects</a> |
-                        <a href="#contact">Contact</a>
+                        <Link to="/resume">Resume</Link> |
+                        <Link to="/projects">Projects</Link> |
+                        <Link to="/contact" className="nav-link">Contact</Link>
                     </nav>
                 </div>
             </header>
@@ -49,13 +51,13 @@ function Header() {
                     <div className="footer-section">
                         <h3>Follow Me</h3>
                         <a href="https://www.linkedin.com" target="_blank" rel="noopener noreferrer">
-                        <img width="50" height="50" src="https://img.icons8.com/ios-filled/50/linkedin.png" alt="linkedin"/>
+                            <img width="50" height="50" src="https://img.icons8.com/ios-filled/50/linkedin.png" alt="linkedin" />
                         </a>
                         <a href="https://github.com/" target="_blank" rel="noopener noreferrer">
-                        <img width="24" height="24" src="https://img.icons8.com/external-tal-revivo-regular-tal-revivo/24/external-github-with-cat-logo-an-online-community-for-software-development-logo-regular-tal-revivo.png" alt="external-github-with-cat-logo-an-online-community-for-software-development-logo-regular-tal-revivo"/>
+                            <img width="24" height="24" src="https://img.icons8.com/external-tal-revivo-regular-tal-revivo/24/external-github-with-cat-logo-an-online-community-for-software-development-logo-regular-tal-revivo.png" alt="external-github-with-cat-logo-an-online-community-for-software-development-logo-regular-tal-revivo" />
                         </a>
                         <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer">
-                        <img width="50" height="50" src="https://img.icons8.com/ios/50/instagram-new--v1.png" alt="instagram-new--v1"/>
+                            <img width="50" height="50" src="https://img.icons8.com/ios/50/instagram-new--v1.png" alt="instagram-new--v1" />
                         </a>
                     </div>
                 </div>
